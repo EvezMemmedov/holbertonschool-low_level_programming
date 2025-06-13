@@ -3,29 +3,30 @@
 #include <stdio.h>
 
 /**
- * main - Determines if a number is positive, negative or zero.
+ * main - Assigns a random number to n and prints
+ * whether it's positive, zero, or negative.
  *
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
 int main(void)
 {
-	int n;
+    int n;
 
-	srand(time(0));
-	n = rand() % 21 - 10;
+    srand(time(0)); /* initialize random seed */
+    n = rand() - RAND_MAX / 2; /* so n can be positive, zero, or negative */
 
-	if (n > 0)
-	{
-		printf("%d is positive\n", n);
-	}
-	else if (n == 0)
-	{
-		printf("%d is zero\n", n);
-	}
-	else
-	{
-		printf("%d is negative\n", n);
-	}
+    if (n > 0)
+    {
+        printf("%d is positive\n", n);
+    }
+    else if (n == 0)
+    {
+        printf("%d is zero\n", n);
+    }
+    else
+    {
+        printf("%d is negative\n", n);
+    }
 
-	return (0);
+    return (0);
 }
