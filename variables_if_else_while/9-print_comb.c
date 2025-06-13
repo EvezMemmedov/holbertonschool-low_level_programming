@@ -1,28 +1,23 @@
 #include <stdio.h>
 
 /**
- * main - Prints all possible combinations of single-digit numbers
+ * main - prints all single-digit combinations separated by comma and space
  *
- * Return: Always 0 (Success)
+ * Return: 0
  */
 int main(void)
 {
-	int i, j;
+    int i;
 
-	for (i = 0; i <= 8; i++)
-	{
-		for (j = i + 1; j <= 9; j++)
-		{
-			putchar('0' + i);
-			putchar('0' + j);
-			if (!(i == 8 && j == 9))
-			{
-				putchar(',');
-				putchar(' ');
-			}
-		}
-	}
-	putchar('\n');
-
-	return (0);
+    for (i = 0; i < 10; i++)
+    {
+        putchar('0' + i);
+        if (i != 9)
+        {
+            putchar(',');
+            putchar(' ');
+        }
+    }
+    putchar('\n');
+    return (0);
 }
