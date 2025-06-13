@@ -12,7 +12,7 @@ int main(void)
 	int n;
 
 	srand(time(0));
-	n = rand();
+	n = rand() % 21 - 10;
 
 	if (n > 0)
 	{
