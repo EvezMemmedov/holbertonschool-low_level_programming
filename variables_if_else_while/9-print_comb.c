@@ -1,23 +1,24 @@
 #include <stdio.h>
 
 /**
- * main - prints all single-digit combinations separated by comma and space
+ * main - prints all single-digit numbers separated by comma and space
  *
- * Return: 0
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-    int i;
+	int i;
 
-    for (i = 0; i < 10; i++)
-    {
-        putchar('0' + i);
-        if (i != 9)
-        {
-            putchar(',');
-            putchar(' ');
-        }
-    }
-    putchar('\n');
-    return (0);
+	for (i = 0; i < 10; i++)
+	{
+		putchar('0' + i);
+		if (i != 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+	}
+	putchar('\n');
+
+	return (0);
 }
