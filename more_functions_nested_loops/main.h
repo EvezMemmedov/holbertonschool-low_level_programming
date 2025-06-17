@@ -4,7 +4,7 @@
 
 int _isdigit(int c);
 int _isupper(int c);
-
+int _putchar(char c);
 #include <stdio.h>
 #include <stdlib.h>
 void print_numbers(void);
