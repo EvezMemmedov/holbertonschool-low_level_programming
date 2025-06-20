@@ -1,11 +1,10 @@
 #include "main.h"
 
 /**
- * _strlen - that returns the length of a string.
- * @s: - first
- * @i: - second
+ * _strlen - Returns the length of a string.
+ * @s: The string to be measured.
  *
- * return: i
+ * Return: The length of the string.
  */
 int _strlen(char *s)
 {
@@ -16,5 +15,5 @@ int _strlen(char *s)
 		i++;
 	}
 
-	return i;
+	return (i);
 }
