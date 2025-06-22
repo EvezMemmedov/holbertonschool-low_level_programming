@@ -2,8 +2,9 @@
 
 /**
  * _strncat - that concatenates two strings.
- * @dest: destination string
- * @src: source string
+ * @dest: destination string.
+ * @src: source string.
+ * @n: Specifies how many characters to add from src
  *
  * Return: dest
  */
