@@ -17,8 +17,3 @@ void _puts_recursion(char *s)
 	putchar(*s);
 	_puts_recursion(s + 1);
 }
-int main()
-{
-	_puts_recursion("Puts with recursion");
-	return (0);
-}
