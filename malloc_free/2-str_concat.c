@@ -2,16 +2,16 @@
 #include <stdlib.h>
 
 /**
- * str_concat -  that concatenates two strings.
- * @s1: first string
- * @s2: second string
+ * str_concat - Concatenates two strings
+ * @s1: First string
+ * @s2: Second string
  *
- * Return: concat
+ * Return: Pointer to new concatenated string, or NULL on failure
  */
 char *str_concat(char *s1, char *s2)
 {
-	int i = 0, j = 0, x;
 	char *concat;
+	int i = 0, j = 0, x;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -27,7 +27,7 @@ char *str_concat(char *s1, char *s2)
 
 	concat = malloc((i + j + 1) * sizeof(char));
 	if (concat == NULL)
-		return(NULL);
+		return (NULL);
 
 	for (x = 0; x < i; x++)
 		concat[x] = s1[x];
