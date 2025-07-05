@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+/**
+ * struct dog - informetion about dog
+ * @name: dog name
+ * @age: dog age
+ * @owner: dog owner
+ */
+struct dog {
+	char *name;
+	float age;
+	char *owner;
+};
