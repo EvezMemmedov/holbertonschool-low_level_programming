@@ -16,7 +16,6 @@
  *
  * Return: 0 on success, exits with 98, 99, or 100 on errors.
  */
-
 int main(int argc, char *argv[])
 {
 	int num1, num2;
@@ -47,13 +46,6 @@ int main(int argc, char *argv[])
 	}
 
 	func = get_op_func(argv[2]);
-
-	if (func == NULL)
-	{
-		printf("Error\n");
-		exit(99);
-	}
-
 	printf("%d\n", func(num1, num2));
 
 	return (0);
