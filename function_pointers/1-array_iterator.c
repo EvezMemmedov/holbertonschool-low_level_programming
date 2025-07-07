@@ -2,7 +2,7 @@
 #include "function_pointers.h"
 
 /**
- * array_interator - executes a function given as a parameter on each element of an array
+ * array_interator - function given as a parameter on each element of an array
  * @array: massiv
  * @size: size of array
  * @action: function
