@@ -9,7 +9,7 @@
  * @f: The function used to print the name
  */
 void print_name(char *name, void (*f)(char *));
-
+void array_iterator(int *array, size_t size, void (*action)(int));
 /**
  * _putchar - Writes a character to stdout
  * @c: The character to print
