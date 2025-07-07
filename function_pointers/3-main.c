@@ -19,8 +19,8 @@
 
 int main(int argc, char *argv[])
 {
-	int num1,num2;
-	int (*func)(int,int);
+	int num1, num2;
+	int (*func)(int, int);
 
 	if (argc != 4)
 	{
@@ -28,7 +28,10 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	if (argv[2][1] != 0 || (argv[2][0] != '+' && argv[2][0] != '-' && argv[2][0] != '*' && argv[2][0] != '/' && argv[2][0] != '%'))
+	if (argv[2][1] != '\0' ||
+	    (argv[2][0] != '+' && argv[2][0] != '-' &&
+	     argv[2][0] != '*' && argv[2][0] != '/' &&
+	     argv[2][0] != '%'))
 	{
 		printf("Error\n");
 		exit(99);
@@ -44,6 +47,12 @@ int main(int argc, char *argv[])
 	}
 
 	func = get_op_func(argv[2]);
+
+	if (func == NULL)
+	{
+		printf("Error\n");
+		exit(99);
+	}
 
 	printf("%d\n", func(num1, num2));
 
