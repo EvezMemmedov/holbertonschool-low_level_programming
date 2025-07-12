@@ -34,7 +34,8 @@ void print_all(const char * const format, ...)
 			printf("%s%s", sep, str);
 			break;
 		}
-		if (format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's')
+		if (format[i] == 'c' || format[i] == 'i' ||
+			       	format[i] == 'f' || format[i] == 's')
 			sep = ", ";
 		i++;
 	}
