@@ -23,5 +23,6 @@ int main(void)
 	if (n > 1)
 		largest = n;
 	printf("%ld\n", largest);
+
 	return (0);
 }
