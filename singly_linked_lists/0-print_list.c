@@ -5,6 +5,7 @@
 /**
  * print_list - prints all the elements
  * @list_t: linked list's elements
+ * @h: head
  *
  * Return: count
  */
@@ -20,6 +21,7 @@ size_t print_list(const list_t *h)
 			printf("[0] (nil)\n");
 		else
 			printf("[%u] %s\n", (unsigned int)h->len, h->str);
+
 		h = h->next;
 	}
 
