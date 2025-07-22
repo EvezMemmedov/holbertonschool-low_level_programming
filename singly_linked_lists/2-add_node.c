@@ -6,6 +6,8 @@
 /**
  * _strlen - len
  * @s: char
+ *
+ * Return: len
  */
 size_t _strlen(const char *s)
 {
