@@ -4,8 +4,7 @@
 
 /**
  * print_list - prints all the elements
- * @list_t: linked list's elements
- * @h: head
+ * @h: pointer to the head of the list
  *
  * Return: count
  */
