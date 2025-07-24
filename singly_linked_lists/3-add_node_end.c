@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
- * _strlen - len of size_t
+ * _strlen - len
  * @s: char
  *
  * Retrun: len
