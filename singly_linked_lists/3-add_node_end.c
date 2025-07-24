@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
- * _strlen - len
+ * _strlen - Calculates the length of a string
  * @s: char
  *
  * Retrun: len
