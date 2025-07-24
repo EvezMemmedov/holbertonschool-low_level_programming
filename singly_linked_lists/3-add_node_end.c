@@ -4,6 +4,21 @@
 #include <string.h>
 
 /**
+ * _strlen - len of size_t
+ * @s: char
+ *
+ * Retrun: len
+ */
+size_t _strlen(const char *s)
+{
+	size_t len = 0;
+
+	while (s[len] != '\0')
+		len++;
+	return(len);
+}
+
+/**
  * add_node_end - adds a new node at the end 
  * @head: head
  * @str: str
@@ -26,6 +41,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		return(NULL);
 	}
 
+	new_node->len = _strlen(str);
 	new_node->next = NULL;
 
 	if (*head == NULL)
