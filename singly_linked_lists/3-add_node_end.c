@@ -5,9 +5,9 @@
 
 /**
  * _strlen - Calculates the length of a string
- * @s: char
+ * @s: The string to calculate length for
  *
- * Retrun: len
+ * Return: The number of characters in the string (length)
  */
 size_t _strlen(const char *s)
 {
