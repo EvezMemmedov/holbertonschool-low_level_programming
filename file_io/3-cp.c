@@ -6,10 +6,10 @@
 #define BUFFER_SIZE 1024
 
 /**
- * error_exit - helper function to print error message and exit
+ * error_exit - prints error message to stderr and exits with given code
  * @code: exit code
- * @msg: error message format string
- * @arg: argument for message (like filename or fd)
+ * @msg: format string for error message
+ * @arg: argument for the format string (filename or fd)
  */
 void error_exit(int code, const char *msg, const char *arg)
 {
@@ -18,11 +18,11 @@ void error_exit(int code, const char *msg, const char *arg)
 }
 
 /**
- * main - copies content of one file to another
+ * main - copies the content of a file to another file
  * @argc: argument count
  * @argv: argument vector
  *
- * Return: 0 on success, exits with code on failure
+ * Return: 0 on success, exits with specific codes on failure
  */
 int main(int argc, char *argv[])
 {
